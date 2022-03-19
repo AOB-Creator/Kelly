@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --gray-c: #e9e8e6;
+    --font-f: 'Open Sans', sans-serif;
+    --color-black: #444444;
+    --greeen-c: #34b7a7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-f);
+}
+
+
+.container
+{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    /* background-color: rebeccapurple; */
+}
+
+
+
+.navbar{
+    height: 10vh;
+    background-color: var(--gray-c);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+footer{
+    height: 15vh;
+    background-color: var(--gray-c);
+}
+
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo{
+    font-size: 30px;
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+ul.menus li a{
+    color: #4444449f;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+ul.menus li{
+    position: relative;
+    overflow: hidden;
+}
+
+ul.menus li::after{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--greeen-c);
+    left: -100%;
+    content: "";
+    bottom: 0;
+    transition: .5s;
+    
+}
+
+ul.menus li:hover::after{
+    transition: .5s;
+    left: 0%;
+    
+}
+
+ul.menus li.active::after{
+    transition: .5s;
+    left: 0%;
+}
+
+ul.menus li.active a{
+    color: #444444;
+}
+ul{
+    list-style: none;
+}
+
+.socials a{
+    color: rgba(128, 128, 128, 0.671);
+    transition: .5s;
+}
+.socials a:hover{
+    color: var(--greeen-c);
+    transition: .5s;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header ul li{
+    padding: 10px 0;
+    margin: 0 5px;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+section.main{
+    background: url(https://bootstrapmade.com/demo/templates/Kelly/assets/img/hero-bg.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box h3{
+    font-size: 36px;
+    color: #444444;
+}
+
+.box p{
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 22px;
+    color: #a0a0a0ea;
+}
+
+.box button {
+    padding: 10px 15px;
+    background-color: #34b7a7;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer h4{
+    font-weight: 400;
+    color: #444444;
+}
+
+footer a{
+    color: #34b7a7;
+}
